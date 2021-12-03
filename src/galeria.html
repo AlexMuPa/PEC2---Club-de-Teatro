@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+    <title>Galería de obras teatrales</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">CTR<i class="fas fa-bahai logo"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="actores.html">Actores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="articulo.html">Obra</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="galeria">Galería</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <h1 class="titulo">Galería de obras</h1>
+          <article class="galeria-obra">
+
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col">
+                    <figure class="figure">
+                        <img src="assets/images/obra.jpg" alt="" class="imagen-galeria" data-bs-toggle="modal" data-bs-target="#zhaoModal">
+                        <figcaption>El huérfano de Zhao</figcaption>
+                    </figure>
+                  </div>
+                  <div class="col">
+                    <figure class="figure">
+                        <img src="assets/images/RandJ/randj1.jpg" alt="" class="imagen-galeria" data-bs-toggle="modal" data-bs-target="#romeoModal">
+                        <figcaption>Romeo y Julieta</figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <figure class="figure">
+                            <img src="assets/images/phantom/phantom1.jpg" alt="" class="imagen-galeria" data-bs-toggle="modal" data-bs-target="#phantomModal">
+                            <figcaption>El fantasma de la ópera</figcaption>
+                        </figure>
+                      </div>
+                    <div class="col">
+                        <figure class="figure">
+                            <img src="assets/images/miserables/miserables1.jpg" alt="" class="imagen-galeria" data-bs-toggle="modal" data-bs-target="#miserablesModal">
+                            <figcaption>Les Misérables</figcaption>
+                        </figure>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                        <figure style="text-align: center;">
+                            <img src="assets/images/mamma/mamma1.jpg" alt="" class="imagen-galeria" data-bs-toggle="modal" data-bs-target="#mammaModal">
+                            <figcaption>Macbeth</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col">
+                        <figure class="figure">
+                            <img src="assets/images/cats/cats1.jpg" alt="" class="imagen-galeria" data-bs-toggle="modal" data-bs-target="#catsModal">
+                            <figcaption>Cats</figcaption>
+                        </figure>
+                    </div>
+                  </div>
+
+              </div>
+
+
+            <div class="modal fade" id="zhaoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">El huérfano de Zhao</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/images/orphan.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/orphanZhao/orphan1.jpg" class="d-block w-100 carousel__img" alt="...">
+
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/obra.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/orphanZhao/orphan2.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/orphanZhao/orphan3.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="modal fade" id="romeoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Romeo y Julieta</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselRomeoCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselRomeoCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselRomeoCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselRomeoCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselRomeoCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/images/RandJ/randj1.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/RandJ/randj2.jpg" class="d-block w-100 carousel__img" alt="...">
+
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/RandJ/randj3.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/RandJ/randj4.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRomeoCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselRomeoCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="phantomModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">El fantasma de la ópera</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselPhantomCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselPhantomCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselPhantomCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselPhantomCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselPhantomCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/images/phantom/phantom1.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/phantom/phantom2.jpg" class="d-block w-100 carousel__img" alt="...">
+
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/phantom/phantom3.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/phantom/phantom4.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPhantomCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselPhantomCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="miserablesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Les Misérables</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselMiserablesCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselMiserablesCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselMiserablesCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselMiserablesCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselMiserablesCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                              <button type="button" data-bs-target="#carouselMiserablesCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/images/miserables/miserables1.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/miserables/miserables2.jpg" class="d-block w-100 carousel__img" alt="...">
+
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/miserables/miserables3.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/miserables/mirables4.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/miserables/miserables5.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMiserablesCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselMiserablesCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="mammaModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Macbeth</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselMammaCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselMammaCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselMammaCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselMammaCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselMammaCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/images/mamma/mamma1.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/mamma/mamma2.jpg" class="d-block w-100 carousel__img" alt="...">
+
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/mamma/mamma3.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/mamma/mamma4.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselMammaCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselMammaCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="catsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Cats</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="carouselCatsCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselCatsCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselCatsCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselCatsCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              <button type="button" data-bs-target="#carouselCatsCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="assets/images/cats/cats1.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/cats/cats2.jpg" class="d-block w-100 carousel__img" alt="...">
+
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/cats/cats3.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="assets/images/cats/cats4.jpg" class="d-block w-100 carousel__img" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCatsCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCatsCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+        </article>
+      </main>
+
+
+      <footer class="pie-pagina">
+        <h2 class="titulo-secundario">Club de Teatro de Ripollet</h2>
+        <div class="container info-footer">
+            <dic class="row">
+                <div class="col">
+
+                    <ul class="footer-list">
+                        <li><h3 class="tercer-titulo-footer">CTR</h3></li>
+                        <li>¿Quiénes somos?</li>
+                        <li>Nuestra historia</li>
+                        <li>Otras obras</li>
+                    </ul>
+                </div>
+                <div class="col">
+
+                    <ul class="footer-list">
+                        <li><h3 class="tercer-titulo-footer">Contacto</h3></li>
+                        <li>Contáctanos</li>
+                        <li>Visítanos</li>
+                        <li>Únete a nosotros</li>
+                    </ul>
+                </div>
+            </dic>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">CTR<i class="fas fa-bahai logo"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse nav-center justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link"  href="actores.html">Actores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="articulo.html">Obra</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link "  href="#"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-facebook"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </footer>
+    <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+</html>

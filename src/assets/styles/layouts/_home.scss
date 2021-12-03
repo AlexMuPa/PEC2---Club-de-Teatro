@@ -1,0 +1,359 @@
+@use "sass:list";
+@function size-font($size){
+  $font-sizes: (0.8rem, 0.9rem, 1rem, 1.1rem, 1.2rem, 1.3rem, 1.4rem, 1.5rem, 2rem, 3rem);
+  @return list.nth($font-sizes, $size);
+}
+html {
+  box-sizing: border-box;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  background-color: $color-fondo;
+  color: $font-color;
+  height: 100%;
+}
+*, *::after, *::before{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: size-font(3);
+}
+.titulo{
+  text-align: center;
+}
+.tercer-titulo-footer{
+  font-size: size-font(4);
+}
+.body{
+
+  text-align: center;
+  margin:auto;
+}
+.poster{
+  margin:auto;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  width: 90vw;
+}
+
+.navbar{
+  width: 100%;
+}
+
+.enlaces{
+  font-size: size-font(6);
+}
+.orphan{
+  width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.titulo-principal{
+  text-align: center;
+  font-size: size-font(10);
+}
+
+.titulo-secundario{
+  font-size: size-font(9);
+}
+.tercer-titulo{
+  font-size: size-font(8);
+}
+.pie-pagina{
+  margin-top: 7rem;
+  overflow: auto;
+  background-color: $secondary;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-footer{
+  margin: auto;
+}
+.footer-list{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-center{
+  margin: 0;
+  float: none;
+  text-align: center;
+}
+
+.actores{
+  width: 90vh;
+  margin: auto;
+}
+.card{
+  margin:auto;
+  margin-top: 1.5rem;
+}
+.informacion-obra{
+  width: 80%;
+  margin: auto;
+}
+.imagen-articulo{
+  width: 80%;
+  display: block;
+  margin: auto;
+@media screen and (min-width: 600px){
+  width: 90%;
+}
+@media screen and (min-width: 700px){
+  width: 70%;
+}
+@media screen and (min-width: 850px){
+  height: 500px;
+}
+
+}
+.carousel__img{
+  height: 360px;
+}
+.figure{
+  text-align: center;
+  width: 100%;
+  display: block;
+}
+.imagen-autor{
+  width: 50%;
+  margin: auto;
+  display: block;
+@media screen and (min-width: 700px){
+  float: left;
+  width: 26%;
+  height: 200px;
+  margin-right: 1rem;
+}
+@media screen and (min-width: 1150px) {
+  float: left;
+  width: 30%;
+  height: 350px;
+}
+}
+
+.imagen-galeria{
+  width: 80%;
+  height: 100px;
+@media screen and (min-width: 600px) {
+  height: 160px;
+}
+@media screen and (min-width: 750px) {
+  height: 260px;
+}
+@media screen and (min-width: 1000px) {
+  height: 360px;
+}
+@media screen and (min-width: 1200px) {
+  height: 400px;
+}
+}
+.cita{
+  font-size: size-font(5);
+  padding: 0;
+  border-left: 0.4rem $font-color solid;
+  width: 80%;
+  margin-top:50px;
+  margin-left: 20px;
+  padding-left: 30px;
+  font-style: italic;
+}
+
+.lista-teatros{
+  display: block;
+  text-align: center;
+  list-style-type: none;
+  margin: auto;
+  width: 80%;
+}
+.lista-teatros__item{
+  border-bottom: 0.2rem black solid;
+  padding-bottom: 1rem;
+  padding-top:1rem;
+}
+@media screen and (min-width: 600px){
+
+.informacion-obra{
+  width: 70%;
+}
+.galeria-obra{
+  display: flex;
+  flex-wrap: wrap;
+}
+.actores{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+.card{
+  width: 33%;
+  flex-grow: 1;
+  margin: 2rem;
+}
+
+
+}
+
+@media screen and (min-width: 750px) and (max-width:1050px){
+
+@supports (display: grid){
+
+.titulo-principal{
+  margin-bottom: 1.2rem;
+}
+.orphan{
+  margin-top: 2rem;
+  width: 33%;
+  float: left;
+  margin-right: 1rem;
+}
+.tercer-titulo{
+  font-size: size-font(4);
+  background-color: $primary;
+  display: inline-block;
+  width: 100%;
+  color:white;
+}
+
+.sesiones{
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.sesiones-item{
+  padding: 0.4rem;
+}
+.info{
+  background-color: lightblue;
+  font-weight: bold;
+}
+.sinopsis{
+  clear:both;
+}
+}
+}
+
+@media screen and (min-width: 1050px){
+
+.cita{
+  width: 50%;
+  margin-top:50px;
+  margin-left: 300px;
+}
+.lista-teatros{
+  width: 40%;
+}
+@supports not (display: grid){
+
+.titulo-principal{
+  margin-bottom: 1.2rem;
+}
+.orphan{
+  margin-top: 2rem;
+  width: 33%;
+  float: left;
+  margin-right: 1rem;
+}
+.tercer-titulo{
+  font-size: size-font(4);
+  background-color: $primary;
+  display: inline-block;
+  width: 100%;
+  color:$color-fondo;
+}
+
+
+.sesiones{
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.sesiones-item{
+  padding: 0.4rem;
+}
+.info{
+  background-color: $secondary;
+  font-weight: bold;
+}
+.sinopsis{
+  clear:both;
+}
+}
+@supports (display:grid){
+.poster{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+  grid-template-rows: 40vh 40vh 40vh;
+}
+.orphan{
+  grid-column: 1/3;
+  grid-row: 1/4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.titulo-principal{
+  grid-column: 2/3;
+  color: $color-fondo;
+  grid-row: 1/2;
+  z-index: 1;
+}
+.sinopsis{
+  grid-column: 2/3;
+  grid-row: 3/4;
+  z-index: 1;
+  background-color: $color-fondo;
+  border: solid;
+  border-bottom: none;
+}
+.sesiones{
+  grid-column: 3/6;
+  grid-row: 1/4;
+  display: grid;
+  grid-template-columns: repeat(1fr,3);
+  grid-template-columns: repeat(1fr, 3);
+  list-style: none;
+}
+.sesion-1{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.sesion-2{
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.sesion-3{
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.sesion-4{
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.sesion-5{
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.tercer-titulo{
+  font-size: size-font(5);
+  background-color: $primary;
+  color:$color-fondo;
+}
+.info{
+  background-color: $secondary;
+  font-weight: bold;
+  font-size: size-font(2);
+}
+}
+
+}
